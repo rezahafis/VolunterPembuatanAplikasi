@@ -1,12 +1,37 @@
-# Volunter Pembuatan Aplikasi
+# User and Laundry API
 
-Repository ini digunakan sebagai sayembara pencarian volunter untuk pembuatan aplikasi Dicoding. Jika Anda tertarik untuk menjadi Volunter, silakan lakukan PR(pull-request) pada berkas ini ya. Silakan gunakan format berikut:
+This API provides endpoints for user registration, login, fetching user data, and laundry services.
 
+## Table of Contents
 
-**\* Nama Lengkap, [Nama Portofolio](Alamat Portofolio)**
+- [Endpoints](#endpoints)
+  - [User API](#user-api)
+  - [Laundry API](#laundry-api)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Authentication](#authentication)
+- [Dependencies](#dependencies)
 
+## Endpoints
 
-Berikut daftar Volunter yang diterima:
+### User API
 
-* Oon Arfiandwi, [oo.or.id](https://oo.or.id).
-* Reza Muchamad Hafis, [Linkedin](https://www.linkedin.com/in/reza-muchamad-hafis-163ab5219/)
+#### Get Users
+
+- **Endpoint:** `GET /users`
+- **Description:** Get a list of users with limited information.
+- **Authentication:** Requires a valid access token.
+
+#### User Registration
+
+- **Endpoint:** `POST /register`
+- **Description:** Register a new user.
+- **Request Body:**
+  ```json
+  {
+    "name": "John Doe",
+    "email": "john@example.com",
+    "password": "securepassword",
+    "confPassword": "securepassword",
+    "telephone": "123456789"
+  }
