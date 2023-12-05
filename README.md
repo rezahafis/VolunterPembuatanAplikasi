@@ -47,16 +47,15 @@ This API provides endpoints for user registration, login, fetching user data, an
       {
       "statusCode": 400,
       "message": "Harap Isi Semua Field"
+      },
+      {
+      "statusCode": 400,
+      "message": "Format Email Tidak Sesuai"
+      },
+      {
+      "statusCode": 400,
+      "message": "Password dan Conf Password tidak sesuai"
       }
-  ```json
-    {
-    "statusCode": 400,
-    "message": "Format Email Tidak Sesuai"
-    },
-    {
-    "statusCode": 400,
-    "message": "Password dan Conf Password tidak sesuai"
-    }
 
 
 ### Laundry API
