@@ -21,7 +21,7 @@ This API provides endpoints for user registration, login, fetching user data, an
 - **Description:** Get a list of users with limited information.
 - **Authentication:** Requires a valid access token.
 - **Headers:**
-  -Authorization : Bearer < token >
+    -`Authorization` : `Bearer < token >`
 
 #### User Registration
 
