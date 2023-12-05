@@ -115,6 +115,27 @@ This API provides endpoints for user registration, login, fetching user data, an
     "latitude": "12.3456",
     "longitude": "78.9101"
   }
+- **Response**
+  - status code : 200
+    ```json
+    {
+    "statusCode": 200,
+    "message": "Registrasi Berhasil"
+    }
+  - status code : 400
+    ```json
+      {
+      "statusCode": 400,
+      "message": "Harap Isi Semua Field"
+      },
+      {
+      "statusCode": 400,
+      "message": "Format Email Tidak Sesuai"
+      },
+      {
+      "statusCode": 400,
+      "message": "Password dan Conf Password tidak sesuai"
+      }
 
 
 
