@@ -44,10 +44,11 @@ This API provides endpoints for user registration, login, fetching user data, an
     }
   - status code : 400
     ```json
-    {
-    "statusCode": 400,
-    "message": "Harap Isi Semua Field"
-    },
+      {
+      "statusCode": 400,
+      "message": "Harap Isi Semua Field"
+      }
+  ```json
     {
     "statusCode": 400,
     "message": "Format Email Tidak Sesuai"
