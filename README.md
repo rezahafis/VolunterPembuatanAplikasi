@@ -36,17 +36,11 @@ This API provides endpoints for user registration, login, fetching user data, an
     "telephone": "123456789"
   }
 - **Response**
-  - status code : 200
+  - *status code : 200*
   ```json
   {
     "statusCode": 200,
     "message": "Registrasi Berhasil"
-  }
-  - status code : 400
-  ```json
-  {
-    "statusCode": 400,
-    "message": "Harap isi semua field"
   }
 
 
