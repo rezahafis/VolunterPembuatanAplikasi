@@ -8,7 +8,6 @@ This API provides endpoints for user registration, login, fetching user data, an
   - [User API](#user-api)
   - [Laundry API](#laundry-api)
 - [Installation](#installation)
-- [Usage](#usage)
 - [Authentication](#authentication)
 - [Dependencies](#dependencies)
 
@@ -85,7 +84,7 @@ This API provides endpoints for user registration, login, fetching user data, an
     "statusCode": 400,
     "message": "Password Wrong!"
     }
-  -statuss code : 404
+  - statuss code : 404
   ```json
   {
   "statusCode": 404,
@@ -115,4 +114,41 @@ This API provides endpoints for user registration, login, fetching user data, an
     "telephone": "987654321",
     "latitude": "12.3456",
     "longitude": "78.9101"
+  }
+
+
+
+#### Laundry LOGIN
+
+- **Endpoint:** `POST /laundry/login`
+- **Description:** Login for Laundry.
+  - **Request Body:**
+  ```json
+  {
+    "email": "laundryandri@example.com",
+    "password": "securepassword",
+  }
+- **Response**
+  - status code : 200
+    ```json
+    {
+    "statusCode": 200,
+    "message": "success",
+    "data": {
+    "name": "laundry Andri",
+    "email": "laundryandri@gmail.com",
+    "accessToken":     "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJ1c2VyLU9pbmlRTzl0c1MiLCJuYW1lIjoiUGVuZ2d1bmEgMSIsImVtYWlsSWQiOiJwZW5nZ3VuYTFAZ21haWwuY29tIiwiaWF0IjoxNjg0NTU2ODgzLCJleHAiOjE2ODQ1OTI4ODN9.iRL0Y6PL88e_RoCSTJ2IrpOkJ_AHIw4X3VmQEcAJzJ"
+      }
+    }
+  - status code : 400
+    ```json
+    {
+    "statusCode": 400,
+    "message": "Password Wrong!"
+    }
+  - statuss code : 404
+  ```json
+  {
+  "statusCode": 404,
+    "message": "Email tidak ditemukan!"
   }
