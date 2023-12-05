@@ -36,7 +36,7 @@ This API provides endpoints for user registration, login, fetching user data, an
     "telephone": "123456789"
   }
 - **Response**
-- status code : 200
+  - status code : 200
   ```json
   {
     "success": true,
