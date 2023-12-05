@@ -173,3 +173,6 @@ This API provides endpoints for user registration, login, fetching user data, an
   "statusCode": 404,
     "message": "Email tidak ditemukan!"
   }
+
+
+## Authentication
