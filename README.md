@@ -38,7 +38,7 @@ This API provides endpoints for user registration, login, fetching user data, an
 
 
 
-  ### Laundry API
+### Laundry API
 
 #### Get Laundry Services
 
