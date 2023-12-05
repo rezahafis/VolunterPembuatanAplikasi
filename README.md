@@ -1,4 +1,4 @@
-# User and Laundry API
+# LONDRI API
 
 This API provides endpoints for user registration, login, fetching user data, and laundry services.
 
