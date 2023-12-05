@@ -35,7 +35,15 @@ This API provides endpoints for user registration, login, fetching user data, an
     "confPassword": "securepassword",
     "telephone": "123456789"
   }
-
+- **Response**
+- status code : 200
+  ```json
+  {
+    "success": true,
+    "statusCode": 200,
+    "message": "Registrasi Berhasil"
+}
+  
 
 
 ### Laundry API
