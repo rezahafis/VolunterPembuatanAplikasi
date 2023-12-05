@@ -57,7 +57,31 @@ This API provides endpoints for user registration, login, fetching user data, an
       "message": "Password dan Conf Password tidak sesuai"
       }
 
+  #### User LOGIN
 
+- **Endpoint:** `POST /login`
+- **Description:** Login for User.
+  - **Request Body:**
+  ```json
+  {
+    "email": "john@example.com",
+    "password": "securepassword",
+  }
+- **Response**
+  - status code : 200
+    ```json
+    {
+    "success": true,
+    "statusCode": 200,
+    "message": "success",
+    "data": {
+    "name": "Pengguna 1",
+    "email": "pengguna1@gmail.com",
+    "accessToken":     "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJ1c2VyLU9pbmlRTzl0c1MiLCJuYW1lIjoiUGVuZ2d1bmEgMSIsImVtYWlsSWQiOiJwZW5nZ3VuYTFAZ21haWwuY29tIiwiaWF0IjoxNjg0NTU2ODgzLCJleHAiOjE2ODQ1OTI4ODN9.iRL0Y6PL88e_RoCSTJ2IrpOkJ_AHIw4X3VmQEcAJzJ"
+    }
+    }
+
+    
 ### Laundry API
 
 #### Get Laundry Services
