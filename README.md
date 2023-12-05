@@ -26,7 +26,7 @@ This API provides endpoints for user registration, login, fetching user data, an
 
 - **Endpoint:** `POST /register`
 - **Description:** Register a new user.
-- **Request Body:**
+  - **Request Body:**
   ```json
   {
     "name": "John Doe",
