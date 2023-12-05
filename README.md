@@ -35,3 +35,29 @@ This API provides endpoints for user registration, login, fetching user data, an
     "confPassword": "securepassword",
     "telephone": "123456789"
   }
+
+
+
+  ### Laundry API
+
+#### Get Laundry Services
+
+- **Endpoint:** `GET /laundrys`
+- **Description:** Get a list of laundry services.
+- **Authentication:** Requires a valid access token.
+
+#### Laundry Registration
+
+- **Endpoint:** `POST /laundry/register`
+- **Description:** Register a new laundry service.
+- **Request Body:**
+  ```json
+  {
+    "name": "LaundryX",
+    "email": "info@laundryx.com",
+    "password": "securepassword",
+    "confPassword": "securepassword",
+    "telephone": "987654321",
+    "latitude": "12.3456",
+    "longitude": "78.9101"
+  }
