@@ -42,7 +42,7 @@ This API provides endpoints for user registration, login, fetching user data, an
     "statusCode": 200,
     "message": "Registrasi Berhasil"
   }
-- *status code : 400*
+ - *status code : 400*
   ```json
   {
     "statusCode": 400,
